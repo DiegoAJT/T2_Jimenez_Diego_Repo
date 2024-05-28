@@ -15,5 +15,7 @@ namespace T2_Jimenez_Diego.Datos
         }
 
         public DbSet<Distribuidor> Distribuidor { get; set;}
+        public DbSet<DistribuidorPeru> DistribuidorPeru {  get; set;}
+        public DbSet<DistribuidorMundo> DistribuidorMundos { get; set;}
     }
 }

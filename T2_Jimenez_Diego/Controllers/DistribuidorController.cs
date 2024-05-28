@@ -11,9 +11,24 @@ namespace T2_Jimenez_Diego.Controllers
         {
             _db = db;
         }
+        //Pestaña de distribuidores
         public IActionResult Index()
         {
             IEnumerable<Distribuidor> listaDis = _db.Distribuidor;
+            return View(listaDis);
+        }
+
+        //Pestaña de distribuidor peru
+        public IActionResult DistribuidorPeru()
+        {
+            IEnumerable<DistribuidorPeru> listaDis = _db.DistribuidorPeru;
+            return View(listaDis);
+        }
+
+        //Pestaña de distribuidor mundo
+        public IActionResult DistribuidorMundo()
+        {
+            IEnumerable<DistribuidorMundo> listaDis = _db.DistribuidorMundos;
             return View(listaDis);
         }
 
